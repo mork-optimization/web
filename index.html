@@ -1,11 +1,39 @@
-<html>
-  <head>
-    <title>Example</title>
-  </head>
-  <body>
-    <h1>Example</h1>
-    <p>
-      <a href="https://example.com">Click me</a> test deplpy for ghpage
-    </p>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mork — Hard problems. Easier to solve.</title>
+<meta name="description" content="Build, tune, and evaluate metaheuristics for NP-hard problems. Discover reusable algorithms, automatic tuning with irace, and AutoLLM campaigns on the JVM.">
+<link rel="canonical" href="https://www.mork-optimization.com/">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f4eddf">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mork">
+<meta property="og:title" content="Hard problems. Easier to solve.">
+<meta property="og:description" content="Your problem. Your ideas. A framework for the rest. Build, tune, and evaluate metaheuristics with Mork.">
+<meta property="og:url" content="https://www.mork-optimization.com/">
+<meta property="og:image" content="https://www.mork-optimization.com/assets/social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mork: Hard problems. Easier to solve. Metaheuristic optimization on the JVM.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wrap"><header><a class="brand" href="/" aria-label="Mork home"><img src="assets/logo.svg" width="40" height="40" alt="">MORK</a><nav aria-label="Main navigation"><a href="https://docs.mork-optimization.com/">Documentation ↗</a><a href="https://generator.mork-optimization.com/">Generator ↗</a><a href="https://github.com/mork-optimization/mork">GitHub ↗</a></nav></header>
+<main id="main"><section class="hero" aria-labelledby="headline"><div><div class="eyebrow" id="kicker">The metaheuristic optimization framework</div><h1 id="headline">Hard problems.<br><em>Easier to solve.</em></h1><p class="intro">Build, tune, and evaluate metaheuristics for NP-hard problems. Mork brings reusable algorithms, automatic configuration, and reproducible experimentation together on the JVM.</p><div class="actions"><a class="button primary" href="https://generator.mork-optimization.com/">Generate a project ↗</a><a class="button" href="https://docs.mork-optimization.com/">Explore the docs →</a></div><span class="fine">Your problem. Your ideas. A framework for the rest.</span></div>
+<div class="visual"><div class="visual-title"><span>THE SEARCH FOR BETTER SOLUTIONS</span><span>ILLUSTRATION / 01</span></div><svg viewBox="0 0 480 340" role="img" aria-label="Illustrative optimization route connecting nodes on a grid"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" class="grid" fill="none"/></pattern></defs><rect width="480" height="340" fill="url(#grid)"/><g stroke="currentColor" opacity=".12" fill="none"><path d="M40 250L360 65L160 50L410 280L70 95L290 290L440 170L190 220L260 110L40 250"/><path d="M70 95L410 280L360 65L190 220L160 50L440 170L40 250"/></g><path class="route" d="M40 250L70 95L160 50L260 110L360 65L440 170L410 280L290 290L190 220Z"/><g class="node"><circle cx="40" cy="250" r="6"/><circle cx="70" cy="95" r="6"/><circle cx="160" cy="50" r="6"/><circle cx="260" cy="110" r="6"/><circle cx="360" cy="65" r="6"/><circle cx="440" cy="170" r="6"/><circle cx="410" cy="280" r="6"/><circle cx="290" cy="290" r="6"/><circle cx="190" cy="220" r="6"/></g><circle cx="260" cy="110" r="17" class="route" opacity=".35"/></svg><div class="visual-foot"><span>Explore → Improve → Repeat</span><span>Combinatorial optimization</span></div></div></section>
+<div class="strip"><span>BUILT FOR THE JVM</span><span>COMPOSABLE ALGORITHMS</span><span>AUTOMATIC TUNING</span><span>REPRODUCIBLE EXPERIMENTS</span></div>
+<section><div class="eyebrow">From a first idea to a measured result</div><h2>Spend your time on the algorithm.<br><em>Let Mork connect the rest.</em></h2><div class="steps">
+<article class="step"><span class="number">01 / COMPOSE</span><h3>Build on proven approaches.</h3><p>Combine VNS, simulated annealing, iterated greedy, and other strategies with your own constructors, local searches, and perturbations.</p><a href="https://docs.mork-optimization.com/concepts/algorithm-components/components/">Explore components ↗</a></article>
+<article class="step"><span class="number">02 / TUNE</span><h3>Search for the right combination.</h3><p>Mork discovers your annotated components and builds the irace search space. Tune both component choices and parameter values without assembling that space by hand.</p><a href="https://docs.mork-optimization.com/features/autoconfig/">Explore autoconfig ↗</a></article>
+<article class="step"><span class="number">03 / COMPARE</span><h3>Know where you stand.</h3><p>Compare your approaches with reference results and best-known values. Export CSV and Excel reports with raw results and interactive pivot tables.</p><a href="https://docs.mork-optimization.com/features/compare/">Compare approaches ↗</a></article>
+</div></section>
+<section class="autollm"><div><div class="eyebrow">Meet AutoLLM</div><h2>New algorithm ideas.<br><em>Put to the test.</em></h2><p>Explore AI-generated components through independent campaigns. Each trial starts from the same committed baseline, verifies proposed components, tunes them with irace, and compares the selected proposal against a fixed reference algorithm.</p><a class="button primary" href="https://github.com/mork-optimization/mork">Explore Mork on GitHub ↗</a><p class="small">Run campaigns locally or over SSH, follow progress in the dashboard, and resume saved work.</p></div><div class="campaign" aria-label="AutoLLM workflow illustration"><div class="eyebrow">A trial, from idea to evidence</div><ol><li><span>01</span><div><strong>Generate</strong><small>Propose new algorithm components</small></div></li><li><span>02</span><div><strong>Verify</strong><small>Build and test the proposal</small></div></li><li><span>03</span><div><strong>Tune</strong><small>Configure with irace</small></div></li><li><span>04</span><div><strong>Compare</strong><small>Evaluate against a fixed baseline</small></div></li></ol><div class="fine">Workflow illustration · Not a live campaign</div></div></section>
+<section><div class="eyebrow">The details behind useful experiments</div><h2>Better evidence starts with better experiments.</h2><div class="support"><article><h3>Choose informative instances.</h3><p>Select a preliminary set from instance properties. Screen inputs that a baseline solves consistently quickly, then review the proposed training and testing sets.</p><a href="https://docs.mork-optimization.com/features/instance-selection/">Instance selection ↗</a></article><article><h3>Understand execution costs.</h3><p>Track time to best and objective curves. Enable component timing traces to inspect where time is spent in sequential or parallel experiments.</p><a href="https://docs.mork-optimization.com/">Explore the documentation ↗</a></article><article><h3>Keep results useful.</h3><p>Export experiment data to CSV, TSV, or Excel and solutions to JSON. Take results into your own analysis workflow.</p><a href="https://docs.mork-optimization.com/features/serialization/">Results and exports ↗</a></article></div></section>
+<section class="dashboard-section" aria-labelledby="dashboard-title"><div class="section-heading"><div><p class="eyebrow">See the search unfold</p><h2 id="dashboard-title">From running code<br>to visible progress.</h2></div><p>Follow solution quality and convergence as experiments run. This travelling salesman example shows routes and objective curves side by side.</p></div><figure class="dashboard"><a href="assets/dashboard.png" aria-label="View the full travelling salesman dashboard screenshot"><img src="assets/dashboard.png" width="1341" height="964" loading="lazy" decoding="async" alt="Mork travelling salesman example dashboard showing routes, convergence charts, and objective values for ch130 and berlin52."></a><figcaption>From the TSP documentation · Example dashboard, not a live run. <a href="assets/dashboard.png">View full image ↗</a></figcaption></figure></section><section class="closing"><div><div class="eyebrow">Built around reproducible research</div><h2>Ready for your next hard problem?</h2><p>Generate a project and start building. Explore the research methodology behind Mork along the way.</p><a href="https://doi.org/10.1162/evco_a_00317">Read the research paper ↗</a></div><a class="button primary" href="https://generator.mork-optimization.com/">Start your next experiment ↗</a></section></main><footer><span>MORK · Metaheuristic Optimization framewoRK</span><nav aria-label="Footer navigation"><a href="https://docs.mork-optimization.com/">Docs</a><a href="https://generator.mork-optimization.com/">Generator</a><a href="https://github.com/mork-optimization/mork">GitHub</a></nav></footer></div>
+
+</body>
 </html>
